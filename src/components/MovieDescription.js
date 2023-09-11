@@ -47,6 +47,16 @@ export default function MovieDescription({ movie }) {
           {" "}
           <strong>IMDb Rating:</strong> <i>{item.imdbRating}</i>
         </p>
+        <p>
+          <strong>Stream link:</strong>{" "}
+          <a
+            href={`https://www2.solarmovie.cr/search/${movie.Title.toLowerCase()
+              .split(" ")
+              .join("%20")}/`}
+          >
+            Link
+          </a>
+        </p>
       </nav>
     </div>
   );
