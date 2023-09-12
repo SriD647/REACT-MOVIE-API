@@ -29,6 +29,11 @@ body {
   color: rgb(240, 206, 122);
 }
 
+#header a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
 .search-container {
   display: flex;
   align-items: center;

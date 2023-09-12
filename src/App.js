@@ -46,7 +46,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 id="header"> Welcome to Search-A-Film! </h1>
+
+      <h1 id="header"><a href="http://localhost:3000">Welcome to Search-A-Film!</a></h1>
       <nav className="search-container">
         <Form getMovie={getMovie} />
         <SearchForm getMovies={getMovies} />
