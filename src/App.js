@@ -39,6 +39,10 @@ export default function App() {
     }
   };
 
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
   useEffect(() => {
     // getMovie("borat");
     getMovies("Batman");
@@ -46,8 +50,7 @@ export default function App() {
 
   return (
     <div className="App">
-
-      <h1 id="header"><a href="https://searchfilm.netlify.app">Welcome to Search-A-Film!</a></h1>
+      <h1 id="header" onClick={reloadPage}>Welcome to Search-A-Film!</h1>
       <nav className="search-container">
         <Form getMovie={getMovie} />
         <SearchForm getMovies={getMovies} />
