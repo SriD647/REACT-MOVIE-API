@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="App">
 
-      <h1 id="header"><a href="https://searchafilm.srithecoder.me/">Welcome to Search-A-Film!</a></h1>
+      <h1 id="header"><a href="https://searchafilm.netlify.app/">Welcome to Search-A-Film!</a></h1>
       <nav className="search-container">
         <Form getMovie={getMovie} />
         <SearchForm getMovies={getMovies} />
